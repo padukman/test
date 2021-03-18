@@ -1,0 +1,107 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+body {padding: 0 5px;
+
+}
+#header {background: #0005;box-sizing: border-box;padding: 0 10px;border: none;}
+#header h1 a { font-size: 40px;color: #fff;}
+#header h1 a span {color: #79c34a;}
+#header .navbar-toggle {border: none;}
+#header .navbar-collapse {border: none;box-shadow: none;}
+#header .logo {padding: 5px;}
+#header .logo img {display: block;height: 40px;}
+#header #gnb li a {font-size: 20px ;color: #fff;}
+#header #gnb li.on a {color: #79c34a;}
+
+
+
+#main {width: 100%;height: 650px;background: url('../images/visual1.jpg') no-repeat center center;background-size: cover;}
+
+
+
+
+
+
+#about, #team, #service,#work,#features,#skill,#portfolio,#map,#contact{padding: 90px 0 100px;text-align: center;}
+#about .title h2, #team .title h2,#work h2, #service .title h2 #features h2,#skill h2,#portfolio h2,#map h2,#contact h2{font-size: 3em;color: #333;margin-bottom: 50px;position: relative;padding-bottom: 50px;}
+#about .title h2::after, #team .title h2::after, #work h2::after, #service .title h2::after, #features h2::after,#skill h2::after,#portfolio h2::after,#map h2::after,#contact h2::after{margin-bottom: 20px; content: '';width: 230px;height: 5px;background: #79c34a;position: absolute;left: 50%;bottom: -20px;transform: translateX(-50%);}
+#about .title h2 span, #team .title h2 span,#service h2 span, #work h2 span,#features h2 span,#skill h2 span,#portfolio h2 span,#map h2 span,#contact h2 span{color: #79c34a;}
+#about .title p,#portfolio p {font-size: 1.5em;}
+#about .col-md-7 img {width: 100%;}
+#about .col-md-5 h3 {font-size: 3em;font-weight: bold;text-align: center;}
+#about .col-md-5 .p1 {font-size: 1.1em;margin-top: 30px;}
+#about .col-md-5 .p1 span {float: right;color: #79c34a;text-align: right;}
+#about .col-md-5 .p2 {clear: both;font-size: 1.1em; font-weight: bold;text-align: left;margin-top: 10px;}
+#about .col-md-5 ul {text-align: left;}
+#team, #work,#skill,#map{background: #42474a;}
+#team .container .row .title h2,#work h2,#skill h2,#map h2{ color: #fff;}
+#team .col-md-3 img {margin-bottom: 20px;}
+#team .col-md-3 .sns {display: inline-block;width: 35px;height: 35px;font-size: 1.2em;color: #fff;text-align: center;line-height: 30px;border: 2px solid #fff;border-radius: 100%;}
+#team .col-md-3 ul .li1 {font-size: 1.5em;color: #fff;}
+#team .col-md-3 ul .li2 {font-size: 1em;color: #fff7;}
+
+/* service starts */
+#service h2{font-size: 3em;margin-bottom: 20px;}
+#service .col-md-3{border:1.5px solid #79c34a;width: 23%;padding: 25px 15px;margin-top: 10px;margin-right: 10px;border-radius: 10px;}
+#service .col-md-3 .icon{font-size: 3em;color:#79c34a;margin-bottom: -10px;}
+#service .col-md-3 h3{font-size: 1.7em;font-weight: bold;}
+#service .row{margin-top: 20px;}
+
+/* work starts */
+#work .col-md-3{text-align: center;}
+#work .col-md-3 .icon{color:#79c34a;font-size: 3em;border-radius: 100%;width: 150px;background: #fff;text-align: center;line-height: 150px;margin: 0 auto;position: relative;cursor: pointer;}
+#work .col-md-3 .icon:hover:after{transform: scale(1.1);opacity: 1;}
+#work .col-md-3 .icon::after{position: absolute;width: 150px;height: 150px;content: '';border:3px solid #79c34a;border-radius: 100%;transition: all 0.3s ease;opacity: 0;left: 0;top: 0;}
+#work .col-md-3 h3{color:#fff;text-align: center;margin-bottom: 20px;}
+
+#features h2{font-size: 3em;}
+#features h2::after{bottom: -40px;}
+#features .col-sm-4{border:1.5px solid #79c34a;width: 31%;padding: 25px 15px;margin-top: 10px;margin-right: 10px;border-radius: 10px;}
+#features .icon{font-size: 3em;color:#79c34a;margin-bottom: -10px;padding-top: 30px;transform: scale(1.0);transition: all 0.5s ease;}
+#features .icon:hover{transform: scale(1.5);}
+#features .col-sm-4 h3{font-size: 1.7em;font-weight: bold;}
+#features .col-sm-4 h4{font-size: 1.15em;font-weight: bold;position: relative;}
+#features .col-sm-4 h4::after{margin-bottom: 15px; content: '';width: 60px;height: 2px;background:#79c34a;;position: absolute;left: 50%;bottom: -20px;transform: translateX(-50%);}
+#features .col-sm-4 p{margin-top: 25px;}
+.boxes{margin-top: 40px;font-size: 20px;}
+
+#skill h3{color:#fff;margin-bottom: 30px;font-size: 1.5em;}
+#skill .progress-bar{width: 150px;height: 150px;}
+#skill .progress-bar div{width: 150px;height: 150px;}
+#skill .progress-bar div span{width: 125px;height: 125px;top: 50%;left: 50%;transform: translate(-50%,-50%);line-height: 125px;}
+
+/* 포트폴리오 */
+.gmenu{margin:0 auto;width: 570px;height: 40px;}
+.gmenu li{width: 110px;height: 40px;float:left;margin-right:5px;}
+.gmenu li:last-child{margin-right:0;}
+.gmenu li a{display: block;width: 100%;height: 100%;border:1px solid #77d239;line-height: 40px;text-decoration: none;font-size:14px;font-weight:bold;background: #77d239;color:#fff;}
+.gmenu li.on a{background: #fff;color:#79c34a;border:1px solid #79c34a;}
+#img_box{margin:20px auto 0;width:1090px;overflow: hidden;}
+#img_box .grid-item{float:left;width:250px;height: 200px;position: relative;margin:0 20px 20px 0;}
+#img_box .grid-item img{width: 100%;height: 100%;}
+#img_box .grid-item:last-child{margin-right:0;}
+#img_box .grid-item:nth-child(4){margin-right:0;}
+#img_box .grid-item:nth-child(8){margin-right:0;}
+#img_box .grid-item .grid-item_cover{position: absolute;left:0;top:0;width: 100%;height: 100%;box-sizing: border-box;background: rgba(0,0,0,0.8) url("../images/ico_link.png")no-repeat center center;display: none;}
+
+
+#map{width: 100%;height: 680px;}
+#map #map_canvas{width: 100%;height: 420px;}
+
+#contact .form_line ul{border:1px solid red;}
+#contact .form_line ul li{margin-bottom: 40px;}
+#contact .form_line label{text-indent: -99999px;}
+#contact .form_line .form_group{width: 33%;}
+
+@media screen and (max-width: 768px){
+    #about .title h2,#team .title h2,#work h2,#features h2,#service h2,#skill h2,#portfolio h2,#map h2 {font-size: 2em;margin: 0 auto;margin-bottom: 50px;}
+    #features h2{margin-bottom: 0;}
+    #about .title h2,#work h2,#team h2,#skill h2,#portfolio h2 {width: 150px;}
+    #about .col-md-7 {margin-bottom: 20px;}
+
+    #team .col-md-3{margin-bottom: 60px;}
+    #service .col-md-3{width: 48%;}
+    #features .col-sm-4 {width: 99%;}
+}
